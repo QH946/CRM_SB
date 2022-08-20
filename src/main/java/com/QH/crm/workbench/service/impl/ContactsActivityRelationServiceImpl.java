@@ -5,6 +5,7 @@ import com.QH.crm.workbench.model.ContactsActivityRelation;
 import com.QH.crm.workbench.service.ContactsActivityRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @date 2022/8/15 12:19
  */
 @Service("contactsActivityRelationService")
+@Transactional
 public class ContactsActivityRelationServiceImpl implements ContactsActivityRelationService {
 
     @Autowired

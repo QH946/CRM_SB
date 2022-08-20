@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.3</version>
+        <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.QH</groupId>
@@ -28,11 +28,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.2.1</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
@@ -42,10 +38,11 @@
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jsp-api</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.2</version>
         </dependency>
 
         <!-- MySQL数据库连接驱动 -->
@@ -66,7 +63,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.4.1</version>
+            <version>3.5.9</version>
         </dependency>
         <!-- Spring AOP支持-->
         <dependency>
@@ -99,17 +96,17 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.7.3</version>
+            <version>2.10.3</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.7.3</version>
+            <version>2.10.3</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.7.3</version>
+            <version>2.10.3</version>
         </dependency>
         <!--poi依赖-->
         <dependency>
@@ -149,12 +146,6 @@
                而且springboot集成jsp编译jsp的路径是springboot规定好的位置
                META-INF/resources
            -->
-    <!--
-        Springboot项目默认推荐使用的前端引擎是thymeleaf
-        现在我们要使用springboot集成jsp,手动指定jsp最后编译的路径
-        而且springboot集成jsp编译jsp的路径是springboot规定好的位置
-        META-INF/resources
-    -->
 
     <build>
 

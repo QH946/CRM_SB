@@ -9,6 +9,7 @@ import com.QH.crm.workbench.model.*;
 import com.QH.crm.workbench.service.ClueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,6 +18,7 @@ import java.util.Map;
 
 
 @Service("clueService")
+@Transactional
 public class ClueServiceImpl implements ClueService {
 
     @Autowired

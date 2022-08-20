@@ -6,6 +6,7 @@ import com.QH.crm.workbench.model.Customer;
 import com.QH.crm.workbench.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +18,7 @@ import java.util.Map;
  * @date 2022/8/15 11:38
  */
 @Service("customerServiceImpl")
+@Transactional
 public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerMapper customerMapper;

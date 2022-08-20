@@ -5,6 +5,7 @@ import com.QH.crm.workbench.model.TranRemark;
 import com.QH.crm.workbench.service.TranRemarkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 /**
@@ -14,6 +15,7 @@ import java.util.List;
  * @date 2022/8/15 12:32
  */
 @Service("tranRemarkService")
+@Transactional
 public class TranRemarkServiceImpl implements TranRemarkService {
     @Autowired
     TranRemarkMapper tranRemarkMapper;

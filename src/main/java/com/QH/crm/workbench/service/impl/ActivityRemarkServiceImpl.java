@@ -6,6 +6,7 @@ import com.QH.crm.workbench.service.ActivityRemarkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ import java.util.List;
  */
 
 @Service("activityRemarkService")
+@Transactional
 public class ActivityRemarkServiceImpl implements ActivityRemarkService {
     @Autowired
     private ActivityRemarkMapper activityRemarkMapper;

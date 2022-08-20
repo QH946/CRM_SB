@@ -13,6 +13,7 @@ import com.QH.crm.workbench.model.TranHistory;
 import com.QH.crm.workbench.service.TranService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -26,6 +27,7 @@ import java.util.Map;
  */;
 
 @Service("tranService")
+@Transactional
 public class TranServiceImpl implements TranService {
     @Autowired
     private TranMapper tranMapper;

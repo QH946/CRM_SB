@@ -5,6 +5,7 @@ import com.QH.crm.workbench.model.ClueRemark;
 import com.QH.crm.workbench.service.ClueRemarkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @date 2022/8/13 18:28
  */
 @Service("clueRemarkService")
+@Transactional
 public class ClueRemarkServiceImpl implements ClueRemarkService {
     @Autowired
     private ClueRemarkMapper clueRemarkMapper;

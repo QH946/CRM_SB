@@ -12,6 +12,7 @@ import com.QH.crm.workbench.model.FunnelVO;
 import com.QH.crm.workbench.service.ContactsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -25,6 +26,7 @@ import java.util.Map;
  */
 
 @Service("contactsService")
+@Transactional
 public class ContactsServiceImpl implements ContactsService {
     @Autowired
     private ContactsMapper contactsMapper;
