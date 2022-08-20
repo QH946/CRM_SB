@@ -157,39 +157,47 @@
     -->
 
     <build>
+
+        <resources>
+            <!--指定jsp编译后的存放目录-->
+            <resource>
+                <!--jsp原来的目录-->
+                <directory>src/main/webapp</directory>
+                <!--指定编译后的存放目录-->
+                <targetPath>META-INF/resources</targetPath>
+                <!--指定处理的目录和文件-->
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+            <!--处理资源目录-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.properties</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
-            <!--指定jsp编译后的存放目录-->
-                <resource>
-                    <!--jsp原来的目录-->
-                    <directory>src/main/webapp</directory>
-                    <!--指定编译后的存放目录-->
-                    <targetPath>META-INF/resources</targetPath>
-                    <!--指定处理的目录和文件-->
-                    <includes>
-                        <include>**/*.*</include>
-                    </includes>
-                </resource>
-        </resources>
+
     </build>
 
 </project>

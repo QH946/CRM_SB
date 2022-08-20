@@ -4,8 +4,10 @@ import com.QH.crm.settings.mapper.DicValueMapper;
 import com.QH.crm.settings.model.DicValue;
 import com.QH.crm.settings.service.DicValueService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**

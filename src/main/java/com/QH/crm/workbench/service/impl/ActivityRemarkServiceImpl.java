@@ -4,6 +4,7 @@ import com.QH.crm.workbench.mapper.ActivityRemarkMapper;
 import com.QH.crm.workbench.model.ActivityRemark;
 import com.QH.crm.workbench.service.ActivityRemarkService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
