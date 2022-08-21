@@ -4,11 +4,8 @@ import com.QH.crm.settings.mapper.DicValueMapper;
 import com.QH.crm.settings.model.DicValue;
 import com.QH.crm.settings.service.DicValueService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -18,7 +15,6 @@ import java.util.List;
  * @date 2022/8/13 16:39
  */
 @Service("dicValueService")
-@Transactional
 public class DicValueServiceImpl implements DicValueService {
     @Autowired
     private DicValueMapper dicValueMapper;

@@ -17,7 +17,6 @@ import java.util.List;
  */
 
 @Service("customerRemarkService")
-@Transactional
 public class CustomerRemarkServiceImpl implements CustomerRemarkService {
     @Autowired
     CustomerRemarkMapper customerRemarkMapper;

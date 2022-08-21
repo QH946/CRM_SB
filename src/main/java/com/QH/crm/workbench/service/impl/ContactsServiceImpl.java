@@ -26,7 +26,6 @@ import java.util.Map;
  */
 
 @Service("contactsService")
-@Transactional
 public class ContactsServiceImpl implements ContactsService {
     @Autowired
     private ContactsMapper contactsMapper;

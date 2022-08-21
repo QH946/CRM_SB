@@ -11,7 +11,6 @@ import java.util.List;
 
 
 @Service("clueActivityRelationService")
-@Transactional
 public class ClueActivityRelationServiceImpl implements ClueActivityRelationService {
     @Autowired
     ClueActivityRelationMapper clueActivityRelationMapper;

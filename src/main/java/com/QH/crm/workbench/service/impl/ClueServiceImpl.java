@@ -18,7 +18,6 @@ import java.util.Map;
 
 
 @Service("clueService")
-@Transactional
 public class ClueServiceImpl implements ClueService {
 
     @Autowired

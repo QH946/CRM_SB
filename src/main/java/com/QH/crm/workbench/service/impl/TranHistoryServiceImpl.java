@@ -15,8 +15,8 @@ import java.util.List;
  * @Package com.QH.crm.workbench.service.impl
  * @date 2022/8/15 12:35
  */
+
 @Service("tranHistoryService")
-@Transactional
 public class TranHistoryServiceImpl implements TranHistoryService {
     @Autowired
     TranHistoryMapper tranHistoryMapper;

@@ -14,8 +14,8 @@ import java.util.List;
  * @Package com.QH.crm.workbench.service.impl
  * @date 2022/8/15 12:32
  */
+
 @Service("tranRemarkService")
-@Transactional
 public class TranRemarkServiceImpl implements TranRemarkService {
     @Autowired
     TranRemarkMapper tranRemarkMapper;

@@ -25,7 +25,7 @@
 <script type="text/javascript">
 
 	$(function(){
-		
+
 		//定制字段
 		$("#definedColumns > li").click(function(e) {
 			//防止下拉菜单消失
@@ -178,9 +178,9 @@
 					// 显示模态窗口
 					$("#editCustomerModal").modal("show");
 				}
-			});	
+			});
 		});
-		
+
 		// 给更新按钮添加单击事件
 		$("#saveEditCustomerBtn").click(function () {
 			// 收集参数
@@ -242,7 +242,7 @@
 				}
 			});
 		});
-		
+
 		// 给删除按钮添加单击事件
 		$("#deleteCustomerBtn").click(function () {
 			// 收集参数（获取所有checkbox）
@@ -276,7 +276,7 @@
 				});
 			}
 		});
-		
+
 	});
 
 	/**
@@ -314,7 +314,7 @@
 					htmlString += "<tr class=\"active\">";
 					// checkbox中value存放了客户的id属性
 					htmlString += "<td><input type=\"checkbox\" value=\""+obj.id+"\"/></td>";
-					htmlString += "<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/customer/detailCustom.do?id="+obj.id+"'\"> " + obj.name + " </a></td>";
+					htmlString += "<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/customer/detailCustomer.do?id="+obj.id+"'\"> " + obj.name + " </a></td>";
 					htmlString += "<td>" + obj.owner + "</td>";
 					htmlString += "<td>" + obj.phone + "</td>";
 					htmlString += "<td>" + obj.website + "</td>";
@@ -368,7 +368,7 @@
 				</div>
 				<div class="modal-body">
 					<form class="form-horizontal" role="form" id="createCustomerForm">
-					
+
 						<div class="form-group">
 							<label for="create-customerOwner" class="col-sm-2 control-label">所有者<span style="font-size: 15px; color: red;">*</span></label>
 							<div class="col-sm-10" style="width: 300px;">
@@ -383,7 +383,7 @@
 								<input type="text" class="form-control" id="create-customerName">
 							</div>
 						</div>
-						
+
 						<div class="form-group">
                             <label for="create-website" class="col-sm-2 control-label">公司网站</label>
                             <div class="col-sm-10" style="width: 300px;">
@@ -428,7 +428,7 @@
                             </div>
                         </div>
 					</form>
-					
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -437,7 +437,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 修改客户的模态窗口 -->
 	<div class="modal fade" id="editCustomerModal" role="dialog">
 		<div class="modal-dialog" role="document" style="width: 85%;">
@@ -466,7 +466,7 @@
 								<input type="text" class="form-control" id="edit-customerName" value="动力节点">
 							</div>
 						</div>
-						
+
 						<div class="form-group">
                             <label for="edit-website" class="col-sm-2 control-label">公司网站</label>
                             <div class="col-sm-10" style="width: 300px;">
@@ -477,14 +477,14 @@
 								<input type="text" class="form-control" id="edit-phone" value="010-84846003">
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="edit-description" class="col-sm-2 control-label">描述</label>
 							<div class="col-sm-10" style="width: 81%;">
 								<textarea class="form-control" rows="3" id="edit-description"></textarea>
 							</div>
 						</div>
-						
+
 						<div style="height: 1px; width: 103%; background-color: #D5D5D5; left: -13px; position: relative;"></div>
 
                         <div style="position: relative;top: 15px;">
@@ -513,7 +513,7 @@
                             </div>
                         </div>
 					</form>
-					
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -522,10 +522,10 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	
-	
+
+
+
+
 	<div>
 		<div style="position: relative; left: 10px; top: -10px;">
 			<div class="page-header">
@@ -533,46 +533,46 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div style="position: relative; top: -20px; left: 0px; width: 100%; height: 100%;">
-	
+
 		<div style="width: 100%; position: absolute;top: 5px; left: 10px;">
-		
+
 			<div class="btn-toolbar" role="toolbar" style="height: 80px;">
 				<form class="form-inline" role="form" style="position: relative;top: 8%; left: 5px;">
-				  
+
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">名称</div>
 				      <input class="form-control clear-control" type="text" id="query-name">
 				    </div>
 				  </div>
-				  
+
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">所有者</div>
 				      <input class="form-control clear-control" type="text" id="query-owner">
 				    </div>
 				  </div>
-				  
+
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">公司座机</div>
 				      <input class="form-control clear-control" type="text" id="query-phone">
 				    </div>
 				  </div>
-				  
+
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">公司网站</div>
 				      <input class="form-control clear-control" type="text" id="query-website">
 				    </div>
 				  </div>
-				  
+
 				  <button type="button" class="btn btn-default" id="queryCustomerBtn">查询</button>
 					&nbsp;
 				  <button type="button" class="btn btn-default" id="clearCustomerBtn">清空</button>
-				  
+
 				</form>
 			</div>
 			<div class="btn-toolbar" role="toolbar" style="background-color: #F7F7F7; height: 50px; position: relative;top: 5px;">
@@ -581,7 +581,7 @@
 				  <button type="button" class="btn btn-default" id="editCustomerBtn"><span class="glyphicon glyphicon-pencil"></span> 修改</button>
 				  <button type="button" class="btn btn-danger" id="deleteCustomerBtn"><span class="glyphicon glyphicon-minus"></span> 删除</button>
 				</div>
-				
+
 			</div>
 			<div style="position: relative;top: 10px;">
 				<table class="table table-hover">
@@ -613,7 +613,7 @@
 				</table>
 				<div id="page-master"></div>
 			</div>
-			
+
 <%--			<div style="height: 50px; position: relative;top: 30px;">--%>
 <%--				<div>--%>
 <%--					<button type="button" class="btn btn-default" style="cursor: default;">共<b>50</b>条记录</button>--%>
@@ -648,9 +648,9 @@
 <%--					</nav>--%>
 <%--				</div>--%>
 <%--			</div>--%>
-			
+
 		</div>
-		
+
 	</div>
 </body>
 </html>

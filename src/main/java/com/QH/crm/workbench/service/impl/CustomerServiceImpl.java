@@ -17,8 +17,8 @@ import java.util.Map;
  * @Package com.QH.crm.workbench.service.impl
  * @date 2022/8/15 11:38
  */
+
 @Service("customerServiceImpl")
-@Transactional
 public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerMapper customerMapper;

@@ -18,8 +18,8 @@ import java.util.Map;
  * @Package com.QH.crm.workbench.service.impl
  * @date 2022/8/9 10:30
  */
+
 @Service("activityService")
-@Transactional
 public class ActivityServiceImpl implements ActivityService {
     @Autowired
     private ActivityMapper activityMapper;

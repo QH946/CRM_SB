@@ -27,7 +27,6 @@ import java.util.Map;
  */;
 
 @Service("tranService")
-@Transactional
 public class TranServiceImpl implements TranService {
     @Autowired
     private TranMapper tranMapper;

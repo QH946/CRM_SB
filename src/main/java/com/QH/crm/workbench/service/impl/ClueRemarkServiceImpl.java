@@ -15,8 +15,8 @@ import java.util.List;
  * @Package com.QH.crm.workbench.service.impl
  * @date 2022/8/13 18:28
  */
+
 @Service("clueRemarkService")
-@Transactional
 public class ClueRemarkServiceImpl implements ClueRemarkService {
     @Autowired
     private ClueRemarkMapper clueRemarkMapper;
