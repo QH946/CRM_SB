@@ -227,10 +227,10 @@
         left join tbl_user u3 on a.edit_by=u3.id
         <where>
             <if test="name!=null and name!=''">
-                and a.name like '%' #{name} '%'
+                and a.name like concat('%',#{name},'%')
             </if>
             <if test="owner!=null and owner!=''">
-                and u1.name like '%' #{owner} '%'
+                and u1.name like concat('%',#{owner},'%')
             </if>
             <if test="startDate!=null and startDate!=''">
                 and a.start_date&gt;=#{startDate}
@@ -251,10 +251,10 @@
         left join tbl_user u3 on a.edit_by=u3.id
         <where>
             <if test="name!=null and name!=''">
-                and a.name like '%' #{name} '%'
+                and a.name like concat('%',#{name},'%')
             </if>
             <if test="owner!=null and owner!=''">
-                and u1.name like '%' #{owner} '%'
+                and u1.name like concat('%',#{owner},'%')
             </if>
             <if test="startDate!=null and startDate!=''">
                 and a.start_date&gt;=#{startDate}
@@ -341,7 +341,7 @@
         select a.id,a.name,a.start_date,a.end_date,u.name as owner
         from tbl_activity a
                  join tbl_user u on a.owner=u.id
-        where a.name like '%' #{activityName} '%' and a.id not in (
+        where a.name like concat('%',#{activityName},'%') and a.id not in (
             select activity_id
             from tbl_clue_activity_relation
             where clue_id=#{clueId}
@@ -362,7 +362,7 @@
         select a.id,a.name,a.start_date,a.end_date,u.name as owner
         from tbl_activity a
                  join tbl_user u on a.owner=u.id
-        where a.name like '%' #{activityName} '%' and a.id in (
+        where a.name like concat('%',#{activityName},'%') and a.id in (
             select activity_id
             from tbl_clue_activity_relation
             where clue_id=#{clueId}
@@ -381,7 +381,7 @@
         select a.id,a.name,a.start_date,a.end_date,u.name as owner
         from tbl_activity a
                  join tbl_user u on a.owner=u.id
-        where a.name like '%' #{activityName} '%' and a.id not in (
+        where a.name like concat('%',#{activityName},'%') and a.id not in (
             select activity_id
             from tbl_contacts_activity_relation
             where contacts_id=#{contactsId}
@@ -392,7 +392,7 @@
         select a.id,a.name,a.start_date,a.end_date,u.name as owner
         from tbl_activity a
                  join tbl_user u on a.owner=u.id
-        where a.name like '%' #{activityName} '%';
+        where a.name like concat('%',#{activityName},'%');
     </select>
 
     <select id="selectCountOfActivityGroupByOwner" resultType="com.QH.crm.workbench.model.FunnelVO">
