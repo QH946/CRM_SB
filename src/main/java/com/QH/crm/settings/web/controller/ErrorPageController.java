@@ -1,6 +1,8 @@
 package com.QH.crm.settings.web.controller;
 
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -11,10 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-public class ErrorPageController {
+public class ErrorPageController implements ErrorController {
     @RequestMapping("/settings/error/to404Page.do")
     public String to404Page() {
         return "settings/error/404page";
+    }
+
+    @Override
+    public String getErrorPath() {
+        return null;
     }
 }
 
