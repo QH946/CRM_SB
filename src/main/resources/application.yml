@@ -19,7 +19,7 @@ spring:
     password: root
     druid:
       filters: stat,wall,slf4j
-      aop-patterns: com.lcf.service.* #Spring监控配置，说明请参考Druid Github Wiki，配置_Druid和Spring关联监控配置
+      aop-patterns: "com.QH.crm.settings.mapper.*,com.QH.crm.workbench.mapper.*"  #Spring监控配置，说明请参考Druid Github Wiki，配置_Druid和Spring关联监控配置
       initial-size: 10
       max-active: 100
       min-idle: 10
