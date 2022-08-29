@@ -1,0 +1,23 @@
+2022-08-28 16:48 [main] INFO  com.QH.crm.CrmSbApplication[55] - Starting CrmSbApplication on LAPTOP-SS0MP0GN with PID 17180 (D:\06_LocalRepository\CRM_SB\target\classes started by Lenovo in D:\06_LocalRepository\CRM_SB)
+2022-08-28 16:48 [main] INFO  com.QH.crm.CrmSbApplication[651] - No active profile set, falling back to default profiles: default
+2022-08-28 16:48 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure[55] - Init DruidDataSource
+2022-08-28 16:48 [main] INFO  com.alibaba.druid.pool.DruidDataSource[972] - {dataSource-1} inited
+2022-08-28 16:48 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[92] - Tomcat initialized with port(s): 8088 (http)
+2022-08-28 16:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8088"]
+2022-08-28 16:48 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2022-08-28 16:48 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-08-28 16:48 [main] INFO  org.apache.jasper.servlet.TldScanner[173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-28 16:48 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/crm][173] - Initializing Spring embedded WebApplicationContext
+2022-08-28 16:48 [main] INFO  org.springframework.web.context.ContextLoader[284] - Root WebApplicationContext: initialization completed in 1823 ms
+2022-08-28 16:48 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-28 16:48 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping[58] - Adding welcome page template: index
+2022-08-28 16:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8088"]
+2022-08-28 16:48 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8088 (http) with context path '/crm'
+2022-08-28 16:48 [main] INFO  com.QH.crm.CrmSbApplication[61] - Started CrmSbApplication in 3.175 seconds (JVM running for 4.079)
+2022-08-28 16:48 [http-nio-8088-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/crm][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 16:48 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+2022-08-28 16:48 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[547] - Completed initialization in 6 ms
+2022-08-28 16:48 [http-nio-8088-exec-1] WARN  org.apache.catalina.util.SessionIdGeneratorBase[173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [155] milliseconds.
+2022-08-28 16:49 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-28 16:49 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource[2051] - {dataSource-1} closing ...
+2022-08-28 16:49 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource[2124] - {dataSource-1} closed
