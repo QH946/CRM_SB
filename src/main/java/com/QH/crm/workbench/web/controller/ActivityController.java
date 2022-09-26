@@ -84,12 +84,12 @@ public class ActivityController {
                 returnObject.setCode(Constants.RETURN_OBJECT_CODE_SUCCESS);
             } else { // 保存失败，服务器端出了问题，为了不影响顾客体验，最好不要直接说出问题
                 returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-                returnObject.setMessage("系统繁忙，请稍后重试...");
+                returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
             }
         } catch (Exception e) { // 发生了某些异常，捕获后返回信息
             e.printStackTrace();
             returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-            returnObject.setMessage("系统繁忙，请稍后重试...");
+            returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
         }
         return returnObject;
     }
@@ -142,7 +142,7 @@ public class ActivityController {
         } catch (Exception e) { // 发生了某些异常，捕获后返回信息
             e.printStackTrace();
             returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-            returnObject.setMessage("系统繁忙，请稍后重试...");
+            returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
         }
         return returnObject;
     }
@@ -180,12 +180,12 @@ public class ActivityController {
                 returnObject.setCode(Constants.RETURN_OBJECT_CODE_SUCCESS);
             } else { // 更新失败，服务器端出了问题，为了不影响顾客体验，最好不要直接说出问题
                 returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-                returnObject.setMessage("系统繁忙，请稍后重试...");
+                returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
             }
         } catch (Exception e) { // 发生了某些异常，捕获后返回信息
             e.printStackTrace();
             returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-            returnObject.setMessage("系统繁忙，请稍后重试...");
+            returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
         }
         return returnObject;
     }
@@ -274,7 +274,7 @@ public class ActivityController {
         } catch (Exception e){
             e.printStackTrace();
             returnObject.setCode(Constants.RETURN_OBJECT_CODE_FAILURE);
-            returnObject.setMessage("系统繁忙，请稍后重试...");
+            returnObject.setMessage(Constants.SYSTEM_STATE_BUSY);
         }
         return returnObject;
     }
